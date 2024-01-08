@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Pretendard-Regular';
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  width: 500px;
+}
+
+hr {
+  background-color: #000;
+  width: 100vw;
+}
+
+#title {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+#board {
+  width: 360px;
+  height: 420px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.tile {
+  border: 2px solid lightgrey;
+  width: 66px;
+  height: 60px;
+  margin: 2.5px;
+
+  color: black;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 58px;
+}
+
+
+.inputEff {
+  animation: inputKey 0.08s ease;
+  border: 2px solid grey;
+}
+
+@keyframes inputKey {
+  0% {
+    scale: 1.2;
+    opacity: 50%;
+  }
+  100% {
+    scale: 1;
+    opacity: 100%;
+  }
+}
+
+.correct {
+  background-color: #619978;
+  color: white;
+  border: white;
+}
+
+.present {
+  background-color: #c9b458;
+  color: white;
+  border: white;
+}
+
+.absent {
+  background-color: #8d8f91;
+  color: white;
+  border: white;
+}
