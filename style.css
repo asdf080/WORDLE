@@ -53,10 +53,13 @@ hr {
   line-height: 58px;
 }
 
-
 .inputEff {
   animation: inputKey 0.08s ease;
   border: 2px solid grey;
+}
+
+#answer{
+  min-height: 28px;
 }
 
 @keyframes inputKey {
