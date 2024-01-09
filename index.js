@@ -6,6 +6,7 @@ let col = 0; //현재 알파벳 위치
 
 let gameOver = false;
 let answerWord = ""
+let hint = "HINT: "
 let define = ""
 
 const options = {
@@ -31,6 +32,7 @@ async function fetchRandomWord() {
 async function setupGame() {
   define = await fetchRandomWord();
   define = define.results[0].definition;
+  define = hint+define
   answerWord = await fetchRandomWord();
   answerWord = answerWord.word.toUpperCase();
   console.log(answerWord)
