@@ -1,6 +1,7 @@
 # WORDLE
 
 ### 🔗링크
+-
 
 ### 🔎소개
 바닐라 JS와 words API를 이용해 만든 WORDLE 게임입니다.
