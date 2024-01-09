@@ -6,6 +6,7 @@ let col = 0; //현재 알파벳 위치
 
 let gameOver = false;
 let answerWord = ""
+let define = ""
 
 const options = {
   method: 'GET',
@@ -21,7 +22,6 @@ async function fetchRandomWord() {
   try {
       const response = await fetch(url, options);
       const data = await response.json();
-      console.log(data.results[0].definition)
       return data;
   } catch (error) {
       console.error('Error:', error);
@@ -29,9 +29,13 @@ async function fetchRandomWord() {
 }
 
 async function setupGame() {
+  define = await fetchRandomWord();
+  define = define.results[0].definition;
   answerWord = await fetchRandomWord();
-  answerWord = answerWord.word.toUpperCase()
+  answerWord = answerWord.word.toUpperCase();
+  console.log(define)
   console.log(answerWord)
+
 }
 
 setupGame();
@@ -93,4 +97,9 @@ function update(){
       document.querySelector("#answer").innerText = `Congrats!`
     };
   }
+}
+
+function 힌트보기(){
+  document.querySelector("#hintBtn").style.display = "none"
+  document.querySelector("#hintTxt").innerText = define;
 }
