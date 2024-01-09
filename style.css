@@ -60,6 +60,40 @@ hr {
 
 #answer{
   min-height: 28px;
+  margin-bottom: 30px;
+}
+
+#hintWrap{
+  height: 40px;
+  overflow: hidden;
+}
+
+#hintBtn {
+  padding: 9px 15px;
+  background: none;
+  border: 2px solid #619978;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color:#619978;
+  cursor: pointer;
+}
+
+.hintBtnAni{
+  animation: clickBtn 0.2s ease-in forwards;
+}
+
+#hintBtn:hover {
+  background: #619978;
+  color:#fff;
+}
+
+#hintTxt{
+  transform: translateY(0px);
+}
+
+.hintTxtAni {
+  animation: clickBtn2 0.2s ease-in forwards;
 }
 
 @keyframes inputKey {
@@ -71,6 +105,15 @@ hr {
     scale: 1;
     opacity: 100%;
   }
+}
+
+@keyframes clickBtn {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50px); }
+}
+
+@keyframes clickBtn2 {
+  100% { transform: translateY(-30px); }
 }
 
 .correct {

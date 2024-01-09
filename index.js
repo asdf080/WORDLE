@@ -33,9 +33,8 @@ async function setupGame() {
   define = define.results[0].definition;
   answerWord = await fetchRandomWord();
   answerWord = answerWord.word.toUpperCase();
-  console.log(define)
   console.log(answerWord)
-
+  document.querySelector("#hintTxt").innerText = define;
 }
 
 setupGame();
@@ -93,13 +92,13 @@ function update(){
       현재타일.classList.add("present")
     } else 현재타일.classList.add("absent");
     if (correct === 단어길이) {
-      gameOver=true
-      document.querySelector("#answer").innerText = `Congrats!`
+      gameOver = true;
+      document.querySelector("#answer").innerText = `Congrats!`;
     };
   }
 }
 
 function 힌트보기(){
-  document.querySelector("#hintBtn").style.display = "none"
-  document.querySelector("#hintTxt").innerText = define;
+  document.querySelector("#hintBtn").classList.add("hintBtnAni")
+  document.querySelector("#hintTxt").classList.add("hintTxtAni")
 }
