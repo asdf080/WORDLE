@@ -1,8 +1,11 @@
+// https://rapidapi.com/dpventures/api/wordsapi
+// https://www.wordsapi.com/docs/
+
 let 세로줄 = 6;
 let 단어길이 = 5;
 
-let row = 0; //현재줄
-let col = 0; //현재 알파벳 위치
+let row = 0; 
+let col = 0;
 
 let gameOver = false;
 let answerWord = ""
