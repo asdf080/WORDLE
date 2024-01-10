@@ -12,13 +12,13 @@ let answerWord = "SPACE"
 let hint = "HINT: "
 let define = "OUTSIDE EARTH’S ATMOSPHERE"
 
-const options = {
-  method: 'GET',
-  headers: {
-    'X-RapidAPI-Key': config.apikey,
-    'X-RapidAPI-Host': 'wordsapiv1.p.rapidapi.com'
-  }
-};
+// const options = {
+//   method: 'GET',
+//   headers: {
+//     'X-RapidAPI-Key': config.apikey,
+//     'X-RapidAPI-Host': 'wordsapiv1.p.rapidapi.com'
+//   }
+// };
 
 // async function fetchRandomWord() {
 //   const url = 'https://wordsapiv1.p.rapidapi.com/words/?random=true&letters=5&partOfSpeech=noun&limit=1&lettersMax=5';
