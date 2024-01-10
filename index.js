@@ -8,14 +8,14 @@ let row = 0;
 let col = 0;
 
 let gameOver = false;
-let answerWord = ""
+let answerWord = "SPACE"
 let hint = "HINT: "
-let define = ""
+let define = "OUTSIDE EARTH’S ATMOSPHERE"
 
 const options = {
   method: 'GET',
   headers: {
-    'X-RapidAPI-Key': 'e8e02106a1msh07f61b4bd959879p1f7335jsn79e1641b3775',
+    'X-RapidAPI-Key': config.apikey,
     'X-RapidAPI-Host': 'wordsapiv1.p.rapidapi.com'
   }
 };
