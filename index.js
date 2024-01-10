@@ -20,17 +20,17 @@ const options = {
   }
 };
 
-async function fetchRandomWord() {
-  const url = 'https://wordsapiv1.p.rapidapi.com/words/?random=true&letters=5&partOfSpeech=noun&limit=1&lettersMax=5';
+// async function fetchRandomWord() {
+//   const url = 'https://wordsapiv1.p.rapidapi.com/words/?random=true&letters=5&partOfSpeech=noun&limit=1&lettersMax=5';
 
-  try {
-      const response = await fetch(url, options);
-      const data = await response.json();
-      return data;
-  } catch (error) {
-      console.error('Error:', error);
-  }
-}
+//   try {
+//       const response = await fetch(url, options);
+//       const data = await response.json();
+//       return data;
+//   } catch (error) {
+//       console.error('Error:', error);
+//   }
+// }
 
 async function setupGame() {
   define = await fetchRandomWord();
