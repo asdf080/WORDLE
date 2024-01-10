@@ -32,13 +32,17 @@ const options = {
 //   }
 // }
 
-async function setupGame() {
-  define = await fetchRandomWord();
-  define = define.results[0].definition;
+// async function setupGame() {
+//   define = await fetchRandomWord();
+//   define = define.results[0].definition;
+//   define = hint+define
+//   answerWord = await fetchRandomWord();
+//   answerWord = answerWord.word.toUpperCase();
+//   console.log(answerWord)
+//   document.querySelector("#hintTxt").innerText = define;
+// }
+function setupGame() {
   define = hint+define
-  answerWord = await fetchRandomWord();
-  answerWord = answerWord.word.toUpperCase();
-  console.log(answerWord)
   document.querySelector("#hintTxt").innerText = define;
 }
 
