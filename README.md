@@ -1,7 +1,7 @@
 # WORDLE
 
 ### 🔗링크
--
+https://asdf080.github.io/WORDLE/
 
 ### 🔎소개
 바닐라 JS와 words API를 이용해 만든 WORDLE 게임입니다.
