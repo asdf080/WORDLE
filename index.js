@@ -111,3 +111,29 @@ function 힌트보기(){
   document.querySelector("#hintBtn").classList.add("hintBtnAni")
   document.querySelector("#hintTxt").classList.add("hintTxtAni")
 }
+
+console.log(`
+      ROCKET SCIENCE
+
+            ##
+           #  #
+          #    #
+         #      #
+        #   ##   #
+       #  #    #  #
+       #  #    #   #
+     ##     ##     ##
+    # #            # #
+   #  #            #  #
+  #   #            #   #
+ #    #            #    #
+ #  # #            # #  #
+ # #   #          #   # #
+ #      # # # # ##      #
+
+         #      #
+          #    #
+           #  #
+            ##
+
+`)
